@@ -184,6 +184,8 @@ public:
 	static  bool	propagate[TILE_NUM_COUNT];
 
 	// 4J - this array of simple constants made so the compiler can optimise references to Ids that were previous of the form Tile::<whatever>->id, and are now simply Tile::whatever_Id
+	// fletch added: registered our modern blocks here as well.
+	static const int deepslate_Id = 180;
 	static const int stone_Id = 1;
 	static const int grass_Id = 2;
 	static const int dirt_Id = 3;
@@ -365,7 +367,8 @@ public:
 	static const int clayHardened_Id = 172;
 	static const int coalBlock_Id = 173;
 
-
+// fletch added: same thing here for modern blocks:
+	static Tile *deepslate;
 	static Tile *stone;
 	static GrassTile *grass;
 	static Tile *dirt;
