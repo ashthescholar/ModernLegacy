@@ -1,4 +1,12 @@
 ﻿<root>
+	<data name="IDS_TILE_DEEPSLATE">
+	    <value>Deepslate</value>
+	</data>
+	
+	<data name="IDS_DESC_DEEPSLATE">
+	    <value>Found below y=0, it is a variant of stone.</value>
+	</data>
+
 	<data name="IDS_TIPS_GAMETIP_NEWDLC">
 		<value>New Downloadable Content is available! Access it from the Minecraft Store button on the Main Menu.</value>
 	</data>	
