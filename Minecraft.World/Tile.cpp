@@ -258,7 +258,7 @@ void Tile::staticCtor()
 
 	Tile::tiles = new Tile *[TILE_NUM_COUNT];
 	memset( tiles, 0, sizeof( Tile *)*TILE_NUM_COUNT );
-
+	Tile::deepslate = (new Tile(180, Material::stone))										->setDestroyTime(1.5f)->setExplodeable(10)->setSoundType(Tile::SOUND_STONE)->setIconName(L"stone")->setDescriptionId(IDS_TILE_STONE)->setUseDescriptionId(IDS_DESC_STONE);
 	Tile::stone = (new StoneTile(1))										->setDestroyTime(1.5f)->setExplodeable(10)->setSoundType(Tile::SOUND_STONE)->setIconName(L"stone")->setDescriptionId(IDS_TILE_STONE)->setUseDescriptionId(IDS_DESC_STONE);
 	Tile::grass = static_cast<GrassTile *>((new GrassTile(2))->setDestroyTime(0.6f)->setSoundType(Tile::SOUND_GRASS)->setIconName(L"grass")->setDescriptionId(IDS_TILE_GRASS)->setUseDescriptionId(IDS_DESC_GRASS));
 	Tile::dirt = (new DirtTile(3))											->setDestroyTime(0.5f)->setSoundType(Tile::SOUND_GRAVEL)->setIconName(L"dirt")->setDescriptionId(IDS_TILE_DIRT)->setUseDescriptionId(IDS_DESC_DIRT);
