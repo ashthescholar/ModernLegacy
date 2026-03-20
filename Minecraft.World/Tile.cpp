@@ -43,7 +43,6 @@ bool Tile::mipmapEnable[TILE_NUM_COUNT];
 bool Tile::propagate[TILE_NUM_COUNT];
 
 Tile **Tile::tiles = nullptr;
-
 Tile *Tile::stone = nullptr;
 GrassTile *Tile::grass = nullptr;
 Tile *Tile::dirt = nullptr;
@@ -202,6 +201,8 @@ Tile *Tile::weightedPlate_light = nullptr;
 Tile *Tile::weightedPlate_heavy = nullptr;
 ComparatorTile *Tile::comparator_off = nullptr;
 ComparatorTile *Tile::comparator_on = nullptr;
+// fletch added: New blocks section
+Tile *Tile::deepslate = nullptr;
 
 DaylightDetectorTile *Tile::daylightDetector = nullptr;
 Tile *Tile::redstoneBlock = nullptr;
