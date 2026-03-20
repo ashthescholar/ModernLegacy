@@ -807,6 +807,7 @@ void PreStitchedTextureMap::loadUVs()
 		ADD_ICON(8,		15,	L"vine");
 
 		ADD_ICON(9,		0,	L"lapis_block");
+		ADD_ICON(9,		0,	L"deepslate");
 		ADD_ICON(9,		1,	L"wool_colored_green");
 		ADD_ICON(9,		2,	L"wool_colored_lime");
 		ADD_ICON(9,		3,	L"repeater_on");
