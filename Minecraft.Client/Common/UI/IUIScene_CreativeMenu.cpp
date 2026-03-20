@@ -29,6 +29,8 @@ void IUIScene_CreativeMenu::staticCtor()
 
 	// Building Blocks
 	DEF(eCreativeInventory_BuildingBlocks)
+// fletch added: modern blocks
+		ITEM(Tile::deepslate_Id)
 		ITEM(Tile::stone_Id)
 		ITEM(Tile::grass_Id)
 		ITEM(Tile::dirt_Id)
